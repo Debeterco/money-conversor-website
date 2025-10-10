@@ -1,2 +1,1 @@
-Nosso projeto é um site para converter moedas com taxas de câmbio atualizadas, sem a necessidade de fazer login.
-Utilizando HTML, CSS, JS. E utilizaremos API para atualização de câmbio.
+Em nosso projeto, o grupo escreveu um código para converter o valor entre as moedas com a taxa de câmbio atualizada utilizando as linguagens HTML, CSS e JS juntamente com o API para realizar as atualizações.
