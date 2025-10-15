@@ -1,75 +1,152 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ff6e27;
     text-align: center;
-}
-
-.header {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+  
+  .header {
+    position: fixed;
     top: 0;
-    background-color: rgb(20, 20, 20); /* Green background */
-    color: #ff6e27; /* White text */
-    padding: 10px 0; /* Some padding */
-    font-size: 24px; /* Larger font size */
-    position: fixed;
     width: 100%;
-}
-
-.header a {
-    color: hsl(20, 100%, 58%);
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .header h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #ff6e27;
+  }
+  
+  .navbar a {
+    color: #ff6e27;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
     font-size: 18px;
-    animation: forwards;
-    animation-duration: 0.8ms;
-}
-
-a:hover {
-    color: hsla(20, 100%, 58%, 0.684);
-    font-size: 19px;
-}
-
-.navbar {
-    margin-top: 20px;
-    background-color: rgb(30, 30, 30);
-    padding: 10px 0;
-}
-
-.img-header {
-    padding: 10px;
-    width: fit-content;
-    max-width: 1980px;
-    height: auto;
-    margin: 20px auto;
-}
-
-.text-content {
-    background-color: rgba(20, 20, 20, 0.9);
-    color: hsl(20, 100%, 58%);
-    padding: 40px;
-    font-size: 20px;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 60px auto;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .img-header {
+    max-width: 90%;
     border-radius: 12px;
-}
-
-.container {
-    background-color: rgb(20, 20, 20);
-    color: hsl(20, 100%, 58%);
-    padding: 20px;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    display: block;
+  }
+  
+  .text-content {
+    background-color: #1e1e1e;
+    padding: 40px;
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 15px;
+    color: #ff6e27;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  .container {
+    background-color: #1e1e1e;
+    padding: 40px 30px;
+    max-width: 500px;
+    margin: 40px auto;
     border-radius: 20px;
-    margin: 240px auto;
-    max-width: 400px;
-}
-
-.footer {
-    background-color: rgb(20, 20, 20); /* Green background */
-    color: hsl(20, 100%, 58%); /* White text */
-    padding: 10px 0; /* Some padding */
-    font-size: 24px; /* Larger font size */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    text-align: left;
+    color: #ff6e27;
+    font-weight: bold;
+  }
+  
+  input, select {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #2b2b2b;
+    color: #fff;
+  }
+  
+  button {
+    background-color: #ff6e27;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e65c1f;
+    transform: scale(1.03);
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .footer {
     position: fixed;
-    width: 100%;
     bottom: 0;
-}
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    color: #ff6e27;
+    font-size: 14px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 600px) {
+    .header h1 {
+      font-size: 22px;
+    }
+  
+    .navbar a {
+      margin: 0 8px;
+      font-size: 16px;
+    }
+  
+    .container, .text-content {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }  
