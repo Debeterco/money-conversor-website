@@ -63,7 +63,7 @@ git clone https://github.com/Debeterco/money-conversor-website.git
 
     Navegue até conversor.html e teste a conversão de moedas.
 
-    Alterne o tema Dark/Light e selecione o idioma desejado usando os controles no cabeçalho.
+    Alterne o tema Dark/Light desejado usando os controles no cabeçalho.
 
 📄 Licença
 
