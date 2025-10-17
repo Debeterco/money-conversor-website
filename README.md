@@ -131,7 +131,7 @@ para mais detalhes.
 
     João Vitor Kasteller Debeterco
 
-    Victor Kostetzer
+    Victor Gabriel Kostetzer
 
 ✨ Observações
 
